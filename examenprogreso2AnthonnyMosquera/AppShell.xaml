@@ -8,10 +8,12 @@
     Title="examenprogreso2AnthonnyMosquera">
 
     <TabBar>
-        <ShellContent Title="Recargas" 
+        <ShellContent Title="Recargas" Icon="cj.jpg"
                       ContentTemplate="{DataTemplate local:Recargas}" />
-        <ShellContent Title="Grid" 
+        <ShellContent Title="Grid"  Icon="fino"
                 ContentTemplate="{DataTemplate local:Grid}" />
+        <ShellContent Title="verRecargas" Icon="perro"
+         ContentTemplate="{DataTemplate local:verRecargas}" />
     </TabBar>
 
 </Shell>

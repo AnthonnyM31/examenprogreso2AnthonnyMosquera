@@ -1,12 +1,14 @@
 namespace examenprogreso2AnthonnyMosquera;
 
-public partial class VerNotasPage : ContentPage
+public partial class verRecargas : ContentPage
 {
-    public VerNotasPage()
+    public verRecargas()
     {
         InitializeComponent();
         CargarRecargas();
     }
+
+ 
 
     public List<Recargas.Recarga> Recargas { get; set; }
 
