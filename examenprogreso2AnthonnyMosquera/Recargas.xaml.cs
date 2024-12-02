@@ -1,7 +1,7 @@
 //using static Android.Provider.ContactsContract.CommonDataKinds;
 using SQLite;
-using static Android.Icu.Text.CaseMap;
-using static Android.Provider.ContactsContract.CommonDataKinds;
+//using static Android.Icu.Text.CaseMap;
+//using static Android.Provider.ContactsContract.CommonDataKinds;
 namespace examenprogreso2AnthonnyMosquera;
 
 
@@ -27,7 +27,7 @@ public partial class Recargas : ContentPage
 
 
 
-    private async void GuardarNota_Clicked(object sender, EventArgs e)
+    private async void GuardarRecargaClicked(object sender, EventArgs e)
     {
         string Numero = amosqueranumero.Text;
         string contenido = amosquerarecarga.Text;
@@ -43,7 +43,7 @@ public partial class Recargas : ContentPage
 
             await App.Database.GuardarNotaAsync(nuevaNota);
 
-            await DisplayAlert("Nota Guardada", "Tu nota ha sido guardada con éxito.", "OK");
+            await DisplayAlert("Recarga Guardada", "Tu recarga ha sido guardada con éxito.", "OK");
             await Navigation.PopAsync();
         }
         else

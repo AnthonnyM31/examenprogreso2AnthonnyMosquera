@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="examenprogreso2AnthonnyMosquera.Grid"
              Title="Grid">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <BoxView Grid.Row="0" Grid.Column="0" BindingContext="Anthonny"/>
+        <BoxView Grid.Row="0" Grid.Column="1"  />
+        <BoxView Grid.Row="1" Grid.Column="0"  />
+        <BoxView Grid.Row="1" Grid.Column="1"/>
+    </Grid>
 </ContentPage>
