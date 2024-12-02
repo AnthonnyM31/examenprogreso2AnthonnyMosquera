@@ -1,5 +1,5 @@
 //using static Android.Provider.ContactsContract.CommonDataKinds;
-
+using SQLite;
 namespace examenprogreso2AnthonnyMosquera;
 
 public partial class Recargas : ContentPage
@@ -38,9 +38,9 @@ public partial class Recargas : ContentPage
                 FechaHora = DateTime.Now
             };
 
-            await App.Database.GuardarNotaAsync(nuevaRecarga);
+            await App.Database.GuardarRecargaAsync(nuevaRecarga);
 
-            await DisplayAlert("Nota Guardada", "Tu nota ha sido guardada con éxito.", "OK");
+            await DisplayAlert("Recarga Guardada", "Tu nota ha sido guardada con éxito.", "OK");
             await Navigation.PopAsync();
         }
         else
