@@ -22,7 +22,7 @@ public class BaseDeDatos
         return _database.Table<Recarga>().ToListAsync();
     }
 
-    public Task<int> GuardarRecargaAsync(Recarga nota)
+    public Task<int> GuardarNotaAsync(Recarga nota)
     {
         return nota.Id != 0 ? _database.UpdateAsync(nota) : _database.InsertAsync(nota);
     }

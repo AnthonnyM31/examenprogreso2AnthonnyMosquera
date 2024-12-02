@@ -1,6 +1,9 @@
 //using static Android.Provider.ContactsContract.CommonDataKinds;
 using SQLite;
+using static Android.Icu.Text.CaseMap;
+using static Android.Provider.ContactsContract.CommonDataKinds;
 namespace examenprogreso2AnthonnyMosquera;
+
 
 public partial class Recargas : ContentPage
 {
@@ -24,23 +27,23 @@ public partial class Recargas : ContentPage
 
 
 
-    private async void GuardarRecargaClicked(object sender, EventArgs e)
+    private async void GuardarNota_Clicked(object sender, EventArgs e)
     {
-        string numero = amosqueranumero.Text;
+        string Numero = amosqueranumero.Text;
         string contenido = amosquerarecarga.Text;
 
-        if (!string.IsNullOrWhiteSpace(numero) && !string.IsNullOrWhiteSpace(contenido))
+        if (!string.IsNullOrWhiteSpace(Numero) && !string.IsNullOrWhiteSpace(contenido))
         {
-            var nuevaRecarga = new Recarga
+            var nuevaNota = new Recarga
             {
-                Titulo = numero,
+                Titulo = Numero,
                 Contenido = contenido,
                 FechaHora = DateTime.Now
             };
 
-            await App.Database.GuardarRecargaAsync(nuevaRecarga);
+            await App.Database.GuardarNotaAsync(nuevaNota);
 
-            await DisplayAlert("Recarga Guardada", "Tu nota ha sido guardada con éxito.", "OK");
+            await DisplayAlert("Nota Guardada", "Tu nota ha sido guardada con éxito.", "OK");
             await Navigation.PopAsync();
         }
         else
@@ -48,5 +51,5 @@ public partial class Recargas : ContentPage
             await DisplayAlert("Error", "Por favor, completa todos los campos.", "OK");
         }
     }
-
 }
+
