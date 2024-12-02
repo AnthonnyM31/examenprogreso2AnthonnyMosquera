@@ -5,15 +5,15 @@
              Title="Grid">
     <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
         <BoxView Grid.Row="0" Grid.Column="0" Color="white"/>
-        <Label Grid.Row="0" Grid.Column="0" Text="Anthonny" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+        <Label Grid.Row="0" Grid.Column="0" Text="Anthonny" VerticalOptions="Center" HorizontalOptions="Center" TextColor="black"/>
 
         <BoxView Grid.Row="0" Grid.Column="1" Color="white" />
-        <Label Grid.Row="0" Grid.Column="1" Text="Jossue" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+        <Label Grid.Row="0" Grid.Column="1" Text="Jossue" VerticalOptions="Center" HorizontalOptions="Center" TextColor="black"/>
 
         <BoxView Grid.Row="1" Grid.Column="0" Color="white" />
-        <Label Grid.Row="1" Grid.Column="0" Text="Mosquera" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+        <Label Grid.Row="1" Grid.Column="0" Text="Mosquera" VerticalOptions="Center" HorizontalOptions="Center" TextColor="black"/>
 
         <BoxView Grid.Row="1" Grid.Column="1" Color="white" />
-        <Label Grid.Row="1" Grid.Column="1" Text="Rivadeneira" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="Rivadeneira" VerticalOptions="Center" HorizontalOptions="Center" TextColor="black"/>
     </Grid>
 </ContentPage>
